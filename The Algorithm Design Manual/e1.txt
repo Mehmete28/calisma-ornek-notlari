@@ -1,0 +1,19 @@
+### Problem: Robot Tour Optimization
+Input: A set S of n points in the plane.
+Output: What is the shortest cycle tour that visits each point in the set S?
+
+Stop right now and think up an algorithm to solve this problem. I’ll be happy to wait until you find one. . .
+###
+
++ ilk olarak bes nokta belirledim ve dusunmeye basladim. Her noktaya gelecek ve bunu en kisa sekilde yapacagini     varsayarak bir baslangic noktasi belirledim.
+
+#1 - Turu tam ortadan baslatip bir noktaya gidip geri merkeze geldiginde,  10 uncu hareketinde basladigi yerdeydi.
+#2 - Basladigi yere gelmeden sag ve ya soldan devam edip en son cemberin son elemanindan merkeze geri donsun dedim , 5 inci adimda basladigi yere geri dondu.
+#3 - Merkez noktasini direkt dongu uzerindeki bir elemandan sectim ve tekrar ona gelene kadar saydim , 5 adimda geldi
+
+Tum dusunme seklim yanlis  cikti
+
+the nearest neighborn kurali secili bir noktadan (p0) baslayan kumelerde yanlis calismaya mahkumdur , her zaman yakin komsuya dogru hareket gerceklestirmek kisitlayicidir diyor
+
+Dogru fikrin noktalari duzeni bozmayip (baglanti noktalarini kapamayacak sekilde) kendi arasinda gruplayip acik uclari birlestirerek ilerlemenin daha dogru bir sezgi oldugunu ifade ediyor. Tamamen dogru demiyor ama nearest neighborn a gore daha kontrollu bir bicimde ilerleyecegini ve katedecegi mesafe bakimindan daha az verimli oldugunu belirtiyor ama sonuc olarak dogruluk payiyin daha yuksek oldgununu soyluyor . her bir nokta tek olarak birer grup varsayiliyor , yakin uclari birbirine baglayarak ilerliyor ve kapanista da en sona kalan iki ucu birbirine baglayarak bu turu tamamliyor. Ismi de closest pair heuristic. Sonuc olarak en yuksek dogruluk payina sahip olan sezgisel yaklasim bu oldugundan bu kabul ediliyor .
+

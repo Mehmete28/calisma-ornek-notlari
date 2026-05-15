@@ -1,0 +1,35 @@
+##Problem: Movie Scheduling Problem
+Input: A set I of n intervals on the line.
+Output: What is the largest subset of mutually non-overlapping intervals which can
+be selected from I?
+###
+
+Birbiriyle caksimayan en buyuk I kumesini olusturmam isteniyor, bu durumu da :
+Ben bir aktorum ve belli bir zaman araligi icinde birbiriyle zaman olarak kesismemek kaydiyla alabilecegim kadar is almayi (greedy secim) amacliyorum.
+Alacagim isleri de belirlerken de planlama probleminden yararlaniyorum boylece maksimum sayida is secebilmeye calsiiyorum. Scheduling probleminden yararlandigimda da maksimum sayida is almis oluyorum yani I kumesini birbiriyle kesismeyen en cok eleman ile doldurmus oluyorum.
+
+### Yapay Zekadan Anlamaya Calisirken Aldigim Ornek ###
+
+A: (1, 4)
+
+B: (3, 5)
+
+D: (5, 7)
+
+E: (8, 9)
+
+C: (0, 6)
+
+1 - Ilk ince bu araliklardan en erken biteni seciyoruz  A:(1, 4)
+2 - Sonra da A kumesi ile kesismeyen bir diger kumeyi seciyoruz (B kesisiyor) D kumesini seciyoruz.
+3 - D den sonra en erken hangi isi alabiliriz diye bakiyoruz ve E kumesini kesismedigi icin seciyoruz.
+4 - Total ve sonuc olarak bu zaman araliginda alabilecegimiz tum isleri almis oluyoruz :
+
+    A : (1 , 4)
+    D : (5 , 7) } I kumesinin olusturan alt kumeler
+    E : (8 , 9)
+
+
+
+
+

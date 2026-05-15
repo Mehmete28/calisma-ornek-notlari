@@ -1,0 +1,12 @@
+### Reasoning about Correctness ###
+
+Dogruluk hakkinda akil yurutme bolumu notlari :
+
+1 - Dogru algoritmalari yanlis olanlardan ayirmak icin gerekli olan birincil arac ve ihtiyac kanittir.
+2 - Dogru bir matematiksel kanitin uc bolumden olusacagini ifade ediyor :
+1 - ilk olarak ispat etmeye calistigimiz seyin net bir ifadesi olmali
+2 - Dogru olarak kabul edilen varsayimlarimiz yani ispatin parcalari olmali
+3 - Bu ispati yaparken ve ya yapmaya calisirken kullandigimiz akil yurutme zincirimiz,
+    kanitlamaya calisma surecinde olmasi gereken seylerimizmis.
+
+
