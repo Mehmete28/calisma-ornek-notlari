@@ -1,4 +1,0 @@
-+ Modeling The Problem
-+ Combinatorial Object
--Recursicve Objects
-- war stories
