@@ -1,0 +1,7 @@
+hacking : overflow function pointers okundu. kitabin kaynagindan uygulamayi cekip kitaptaki uygulama yapilacakti.
+
+Algorithm : duplicat detection via hashing okunuyor
+
+cs : Artithmetic and logical operations okunuyor
+
+sicp : constructing procedures using lambda konusuna gecildi
