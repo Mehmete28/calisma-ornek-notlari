@@ -1,0 +1,23 @@
+#lang racket
+
+;;  g(x) = (x + 2)^2 + 3(x + 2) fonksiyon
+
+; (define (g x)
+; (+ (* (+ x 2) (+ x 2))
+;    (* 3 (+ x 2)
+;       )))
+
+; (square x) fonksiyon tanim
+
+(define (square x) (* x x))
+ 
+; ardindan da fonsiyonu lambdada ki gibi ceviriyorum
+; a = x + 2 olarak ceviriyorum
+; a^2 + 3a = (+ (square a) (* 3 a)) a nin karesi ile a nin uc katini topluyor
+
+
+(define (g x)
+  (let ((a (+ x 2)))
+  (+ (square a) (* 3 a))))
+
+; g makinasini let ile tanimladik. a = x+2 oldugun icin a nin karesi ile a nin uc katini topladik

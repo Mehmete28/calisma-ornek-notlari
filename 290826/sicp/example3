@@ -1,0 +1,10 @@
+#lang racket
+
+; fonksiyon k , parametre x
+; a = + x 2
+; b = * a 3
+
+(define (k x)
+  (let ((a (+ x 2)))
+    (let ((b (* a 3)))
+      (+ a b))))

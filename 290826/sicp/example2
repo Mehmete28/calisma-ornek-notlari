@@ -1,0 +1,14 @@
+#lang racket
+
+; h(x, y) = (x + y)(y - 3) + (x + y)^2
+
+; a = x + y
+; b = y - 3
+; a x b + a^2
+
+(define (square x) (* x x))
+
+(define (h x y)
+  (let ((a (+ x y))
+        (b (- y 3)))
+    (+ (* a b) (square a))))

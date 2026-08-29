@@ -1,0 +1,10 @@
+#lang racket
+
+; kendisine verilen bir sayının 5 fazlasının 2 katını = 2(x + 5)
+
+;(define (m x)
+;   (let ((y (+ x 5)))  lambda formatina cevirilecek
+;     (* y 2)))
+
+(define (m x)
+  ((lambda (y) (* y 2)) (+ x 5)))
