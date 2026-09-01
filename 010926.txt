@@ -1,0 +1,4 @@
+hacking : direct parameter adress
+sicp : procedures as returned values - newton s method
+cs : nested arrays - fixed-Size arrays
+algoritma : tema sonu ornekleri yapiliyor
