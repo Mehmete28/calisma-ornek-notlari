@@ -1,0 +1,9 @@
+#lang racket
+
+(define (my-for-each proc items)
+  (if (null? items)
+      true
+      (begin
+  (proc (car items))
+  (my-for-each proc (cdr items)))))
+
