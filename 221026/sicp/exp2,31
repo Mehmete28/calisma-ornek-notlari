@@ -1,0 +1,27 @@
+#lang racket
+
+;tree-map main fonksiyonu
+
+(define (tree-map proc tree)
+  (map (lambda (sub-tree)
+         (if (pair? sub-tree)
+             (tree-map proc sub-tree)
+             (proc sub-tree)))
+       tree))
+
+;yardimci fonksiyon olarak square i tanittik
+
+(define (square x) (* x x))
+
+
+(define (square-tree tree)
+  (tree-map square tree))
+
+;test kismi
+
+(define test-tree (list 1 (list 2 (list 3 4) 5)
+                        (list 6 7)))
+
+; farkli bir proc test etmek icin cube u tanitalim
+
+(define (cube x) (* x x x))

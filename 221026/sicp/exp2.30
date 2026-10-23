@@ -1,0 +1,24 @@
+#lang racket
+
+; recursive yontem
+
+(define (square-tree-direct tree)
+  (cond ((null? tree) '())
+        ((not (pair? tree)) (* tree tree))
+        (else (cons (square-tree-direct (car tree))
+                    (square-tree-direct (cdr tree))))))
+
+; high-order map ile
+
+(define (square-tree-map tree)
+  (map (lambda (sub-tree)
+         (if(pair? sub-tree)
+            (square-tree-map sub-tree)
+            (* sub-tree sub-tree)))
+       tree))
+
+
+; test
+
+(define test-tree (list 1 (list 2 (list 3 4) 5)
+                        (list 6 7)))
