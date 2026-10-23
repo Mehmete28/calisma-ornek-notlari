@@ -1,0 +1,9 @@
+#lang racket
+
+(define x (list (list 1 2) (list 3 4)))
+; x argumaninin degeri ((1 2) (3 4))
+
+(define (deep-reverse tree)
+  (if (pair? tree)
+      (reverse (map deep-reverse tree))
+      tree))
